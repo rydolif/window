@@ -1,0 +1,45 @@
+.btn
+	position: relative
+	display: inline-block
+	white-space: nowrap
+	height: 60px
+	border: none
+	outline: none
+	padding: 0 40px
+	border-radius: 10px
+	background: $btn
+	text-align: center
+	text-transform: uppercase
+	font-family: $gil
+	font-size: 24px
+	color: #fff
+	line-height: 60px
+	letter-spacing: .2px
+
+	&--shine
+		overflow: hidden
+		z-index: 1
+
+		&::before
+			content: ''
+			width: 20px
+			height: 100px
+			background: linear-gradient(to right, transparent 15%, #fff 85%, transparent)
+			position: absolute
+			top: -25px
+			left: -10%
+			transform: rotate(20deg)
+			opacity: 0
+			z-index: -1
+			animation: shine 3s infinite linear
+
+	&:hover,
+	&:focus
+		outline: none
+		border: none
+		text-decoration: none
+		cursor: pointer
+		transition: all .3s
+		box-shadow: 0 5px 10px rgba($text, .4)
+		color: #fff
+

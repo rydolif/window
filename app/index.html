@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Пластиковые окна</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+</head>
+
+<body>
+
+<!-- 	<div class="preloader">
+		<div class="pulse"></div>
+	</div> -->
+
+	<header class="header">
+		<div class="content">
+			<div class="header__container">
+		
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="logo" width="211" height="54">
+					<span>Ишимбайский завод <br>по производству <br>пластиковых окон
+					</span>
+				</a>
+
+				<div class="header__contacts">
+					
+					<div class="header__phone">
+						<div class="header__phone_img">
+							<img src="img/phone.png" alt="phone">
+						</div>
+						
+						<a href="tel:+89196002020">8 919 600 20 20</a>
+						<span>ежедневно с 9.00 до 20.00</span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="windows" id="app">
+			<div class="content windows__container">
+
+				<div class="windows__image">
+					<img src="img/image.png" alt="cara" width="620" height="630">
+					<a href="#" class="windows__video iframe_open"><span></span></a>
+				</div>
+
+				<h1 class="windows__title">Пластиковые окна по лучшим <br> ценам всего от 9,3 руб. за м<sup>2</sup> <br>с установкой в Стерлитамаке</h1>
+
+				<div class="windows__list">
+					
+					<div class="windows__item">
+						<h3>
+							<img src="img/1.png" alt="alt">
+							<span>Бесплатный выезд</span>
+						</h3>
+						<p>Замерщика по городам <br> Ишимбай, Салават,<br> Стерлитамак</p>
+					</div>
+
+					<div class="windows__item">
+						<h3>
+							<img src="img/2.png" alt="alt">
+							<span>Гарантия 50 лет</span>
+						</h3>
+						<p>На профиля, и комплектующие</p>
+					</div>
+
+					<div class="windows__item">
+						<h3>
+							<img src="img/3.png" alt="alt">
+							<span>8 лет делаем окна</span>
+						</h3>
+						<p>Наша борода до пола это доказывает</p>
+					</div>
+
+					<div class="windows__item">
+						<h3>
+							<img src="img/4.png" alt="alt">
+								<span>Гарантия лучшей цены</span>
+							</h3>
+						<p>Вы не переплачиваете так как работете напрямую с заводом изготовителем</p>
+					</div>
+
+				</div>
+
+				<div class="windows__catalog">
+					<img src="img/catalog.png" alt="pdf" class="swing">
+
+					<div class="windows__download">
+						<button class="btn btn--shine order_open">Скачать прайс лист</button>
+						<p>Обновлено 24.05.2019, размер 2,1 Mb</p>
+					</div>
+				</div>			
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="content footer__container">
+				
+				<div class="footer__col">
+					<p>	© 2019 "ILMARI". Все права защищены.</p>
+					<p>Сайт не является публичной офертой.</p>
+				</div>
+
+				<div class="footer__col">
+					<a href="#" target="_blank">Политика конфиденциальности</a>
+				</div>
+
+				<div class="footer__col">
+					<p>г. Стерлитамак, ул. Авиаторов 14</p>
+				</div>
+
+			</div>
+		</footer>
+
+	</main>
+
+	<!-- modal -->
+		<div class="modal" id="order">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close order_close" type="button">
+					<span></span>
+					<span></span>
+				</button>
+
+				<h2>Загрузите прайс-лист</h2>
+				<h3>Прайс загрузится автоматически после заполнения данных</h3>
+
+				<p class="modal__sub-title">* за номером телефона закрепляется персональный доступ к прайсу</p>
+
+				<input type="hidden" name="subject" value="Узнать подробнее!">
+
+				<div class="">
+					<input type="tel" name="phone" required placeholder="+7-(999)-999-99-9">
+				</div>
+
+				<div class="modal__catalog">
+					<img src="img/catalog.png" alt="catalog" class="swing">
+					<button type="submit" class="btn btn--shine" name="submit">Отправить</button>
+				</div>
+
+				<p>Ваши данные в безопасности</p>
+
+			</form>
+		</div>
+
+		<div class="modal modal__iframe" id="iframe">
+
+			<button class="close iframe_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<iframe width="1663" height="738" src="https://www.youtube.com/embed/g0O8gMe9F7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+		</div>
+
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			<h3>Спасибо <br>за доверие!</h3>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
+	<!-- modal end-->
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

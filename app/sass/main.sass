@@ -1,0 +1,251 @@
+@import "libs"
+@import "base"
+
+
+.header
+	background-color: #fff
+	position: fixed
+	right: 0
+	left: 0
+	padding: 35px 0 25px
+	transition: all .3s
+	z-index: 1001
+
+	&--active, &--menu
+		background-color: rgba(255, 255, 255, .95)
+		padding: 5px 0
+
+
+	&__container
+		padding-right: 45px
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		display: flex
+		align-items: center
+
+		img
+			margin-right: 50px
+
+		span
+			line-height: 1.4
+			color: $text
+
+	&__contacts
+		display: flex
+
+	&__phone
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		position: relative
+		padding-left: 75px
+
+		a 
+			line-height: 1
+
+		&_img
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			background: $btn
+			text-align: center
+			line-height: 27px
+
+			&::before
+				content: ''
+				width: 50px
+				height: 50px
+				background: $btn
+				border-radius: 50%
+				opacity: .3
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				z-index: -1
+
+			&::after
+				content: ''
+				width: 80px
+				height: 80px
+				border: 5px solid $btn
+				border-radius: 50%
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				animation: pulse-phone 2s infinite
+				opacity: 0
+
+		a 
+			font-family: $gil
+			color: $accent
+			font-weight: 800
+			font-size: 30px
+			position: relative
+			@extend %underline
+
+
+.main
+	overflow: hidden
+
+
+.windows
+	padding: 165px 0 175px
+	background: url(../img/bg.jpg)
+	background-position: center bottom
+	background-size: cover
+	overflow: visible
+
+	h1
+		width: 50%
+		font-size: 48px
+		line-height: 1.2
+		font-weight: 800
+		margin-bottom: 60px
+
+		sup
+			font-size: 28px
+			position: relative
+			top: -15px
+
+	&__container
+		position: relative
+
+	&__image
+		position: absolute
+		right: 220px
+		bottom: -175px
+
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 47%
+
+	&__item
+		width: 50%
+		margin-bottom: 20px
+
+		h3
+			font-family: $gil
+			font-size: 24px
+			white-space: nowrap
+			text-transform: uppercase
+			color: $accent
+			font-weight: 800
+			padding-left: 85px
+			position: relative
+
+		img
+			position: absolute
+			left: 5px
+
+		p
+			padding-left: 85px
+			font-size: 18px
+
+	&__catalog
+		width: 50%	
+		display: flex
+		align-items: center
+		position: absolute
+		bottom: -190px
+
+		img
+			margin-left: 65px
+			margin-right: 27px
+
+	&__download
+		margin-top: 40px
+
+		button
+			margin-bottom: 10px
+
+		p
+			font-size: 14px
+			font-weight: 700
+			text-align: center
+
+	&__video
+		position: absolute
+		left: 5px
+		top: 100px
+		transform: translateX(-120%)
+		width: 35px
+		height: 35px
+		border-radius: 50%
+		border: none
+		background: $btn
+		text-align: center
+		line-height: 27px
+		cursor: pointer
+
+		span
+			border: 10px solid transparent
+			border-left-width: 20px
+			border-left-color: #fff
+			position: absolute
+			top: 50%
+			left: 33%
+			transform: translateY(-50%)
+
+
+		&::before
+			content: ''
+			width: 70px
+			height: 70px
+			background: $btn
+			border-radius: 50%
+			opacity: .3
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+
+		&::after
+			content: ''
+			width: 120px
+			height: 120px
+			border: 5px solid $btn
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			animation: pulse-phone 2s infinite
+			opacity: 0
+
+.footer
+	border-bottom: 2px solid #DBDBDB
+	&__container
+		padding-top: 90px
+		padding-bottom: 55px
+		padding-right: 60px
+		font-size: 15px
+		line-height: 1.2
+		display: flex
+		justify-content: space-between
+		position: relative
+
+	&__col
+		
+		&:nth-child(2)
+			a 
+				color: $text
+				text-decoration: underline
+		&:last-child
+			text-align: right
+
+
+@import "page"
+@import "media" // Always at the end
